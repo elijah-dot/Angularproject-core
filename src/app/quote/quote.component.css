@@ -1,0 +1,18 @@
+.containerone {
+  width: 100vw;
+  margin-left: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.box1 {
+  height: 80vh;
+  width: 50vw;
+  color: black;
+  background-color: aliceblue;
+}
+.box2 {
+  height: 80vh;
+  width: 30vw;
+  color: black;
+  background-color: aliceblue;
+}
