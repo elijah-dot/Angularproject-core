@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 .box1 {
-  height: 80vh;
+  
   width: 50vw;
   color: black;
   background-color: aliceblue;
@@ -15,4 +15,10 @@
   width: 30vw;
   color: black;
   background-color: aliceblue;
+}
+.box3{
+  width: 350px;
+  border: solid 1px black;
+  text-align: center;
+  
 }

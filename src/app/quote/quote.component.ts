@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class QuoteComponent implements OnInit {
   clicks = 0
   quotes: Quote[] = [
-    new Quote(1,'elijah','first quote ', 0,0, "",new Date(2010,4,20)),
-    new Quote(2,'elijah','second quote', 0,0, "",new Date(2020,9,10)),
-    new Quote(3,'elijah','third quote', 0,0,"",new Date(2021,2,1)),
+    new Quote(1,'Nelson Mandela','The greatest glory in living lies not in never falling, but in rising every time we fall.', 0,0, "",new Date(2010,4,20)),
+    new Quote(2,'walt disney','The way to get started is to quit talking and begin doing.', 0,0, "",new Date(2020,9,10)),
+    new Quote(3,'Steve Jobs',"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.", 0,0,"",new Date(2021,2,1)),
   ];
   constructor() {}
   completequote(ifSure: any, index: number) {

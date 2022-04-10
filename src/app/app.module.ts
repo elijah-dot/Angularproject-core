@@ -10,6 +10,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { VotesComponent } from './votes/votes.component';
 import { TimePipe } from './time.pipe';
+import { HighDirective } from './high.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { TimePipe } from './time.pipe';
     QuoteFormComponent,
     VotesComponent,
     TimePipe,
+    HighDirective,
     
   ],
   imports: [

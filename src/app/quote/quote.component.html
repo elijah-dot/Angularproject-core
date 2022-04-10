@@ -22,7 +22,7 @@
               <button (click)="toggleDetails(i)" class="btn btn-outline-primary">
                 details
               </button>
-              <div *ngIf="quote.showdetails">
+              <div class="box3" *ngIf="quote.showdetails">
                 <quotes-details
                   [quote]="quote"
                   (ifSure)="deleteTheQuote($event, i)"
