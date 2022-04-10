@@ -1,0 +1,12 @@
+.seven{
+    display: flex;
+    justify-content: space-evenly;
+}
+.six{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4px;
+}
+.image{
+    margin-bottom: 8px;
+}
