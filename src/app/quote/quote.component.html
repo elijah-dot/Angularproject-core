@@ -4,33 +4,44 @@
         <thead>
           <tr>
             <th scope="col">quote</th>
-            <th scope="col">uppvotes</th>
-            <th scope="col">downvotes</th>
-            <th scope="col">time</th>
+            <!-- <th scope="col">uppvotes</th>
+            <th scope="col">downvotes</th> -->
             <th scope="col">more details</th>
+            <th scope="col">time</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let quote of quotes; let i = index">
             <td>{{ quote.quote }}</td>
   
-            <td>{{ quote.upvotes }}</td>
-            <td>{{ quote.downvotes }}</td>
+            <!-- <td>{{ quote.upvotes }}</td>
+            <td>{{ quote.downvotes }}</td> -->
 
   
             <td>
               <button (click)="toggleDetails(i)" class="btn btn-outline-primary">
                 details
               </button>
+              <div *ngIf="quote.showdetails">
+                <quotes-details
+                  [quote]="quote"
+                  (ifSure)="deleteTheQuote($event, i)"
+                  
+                ></quotes-details>
+              </div>
             </td>
-            <button  class="btn btn-success" (click)="mine(i)">Add</button>
-            <div *ngIf="quote.showdetails">
+            <td>
+               <p>added :{{quote.today|time}} ago</p>
+
+            </td>
+            
+            <!-- <div *ngIf="quote.showdetails">
               <quotes-details
                 [quote]="quote"
                 (ifSure)="deleteTheQuote($event, i)"
                 
               ></quotes-details>
-            </div>
+            </div> -->
           </tr>
         </tbody>
       </table>

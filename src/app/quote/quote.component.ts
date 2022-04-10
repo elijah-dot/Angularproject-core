@@ -9,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class QuoteComponent implements OnInit {
   clicks = 0
   quotes: Quote[] = [
-    new Quote(1,'elijah','first quote ', 0,0, ""),
-    new Quote(2,'elijah','second quote', 0,0, ""),
-    new Quote(3,'elijah','third quote', 0,0,""),
+    new Quote(1,'elijah','first quote ', 0,0, "",new Date(2010,4,20)),
+    new Quote(2,'elijah','second quote', 0,0, "",new Date(2020,9,10)),
+    new Quote(3,'elijah','third quote', 0,0,"",new Date(2021,2,1)),
   ];
   constructor() {}
   completequote(ifSure: any, index: number) {

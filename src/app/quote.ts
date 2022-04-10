@@ -1,3 +1,5 @@
+
+
 export class Quote {
   public showdetails: boolean;
   id: number;
@@ -6,13 +8,15 @@ export class Quote {
   public upvotes: any;
   downvotes: number;
   description: string;
+  today:Date;
   constructor(
     id: number,
     name: string,
     quote: string,
     upvotes: any,
     downvotes: number,
-    description: string
+    description: string,
+    today :Date
   ) {
     this.id = id;
     this.name = name;
@@ -21,5 +25,6 @@ export class Quote {
     this.upvotes = upvotes;
     this.downvotes = downvotes;
     this.showdetails = false;
+    this.today = today;
   }
 }

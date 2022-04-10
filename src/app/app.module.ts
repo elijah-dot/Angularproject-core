@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,6 +8,8 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
+import { VotesComponent } from './votes/votes.component';
+import { TimePipe } from './time.pipe';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,16 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     QuoteComponent,
     QuotesDetailsComponent,
-    QuoteFormComponent
+    QuoteFormComponent,
+    VotesComponent,
+    TimePipe,
+    
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
