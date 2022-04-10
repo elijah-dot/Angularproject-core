@@ -16,16 +16,19 @@
   
             <td>{{ quote.upvotes }}</td>
             <td>{{ quote.downvotes }}</td>
+
   
             <td>
               <button (click)="toggleDetails(i)" class="btn btn-outline-primary">
                 details
               </button>
             </td>
+            <button  class="btn btn-success" (click)="mine(i)">Add</button>
             <div *ngIf="quote.showdetails">
               <quotes-details
                 [quote]="quote"
                 (ifSure)="deleteTheQuote($event, i)"
+                
               ></quotes-details>
             </div>
           </tr>

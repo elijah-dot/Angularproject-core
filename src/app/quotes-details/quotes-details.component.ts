@@ -7,6 +7,7 @@ import { Quote } from '../quote';
 })
 export class QuotesDetailsComponent implements OnInit {
   @Input()quote:Quote;
+  
   @Output()
   ifSure=new EventEmitter<boolean>();
 

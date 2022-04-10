@@ -1,15 +1,17 @@
+import { Quote } from './../quote';
 import { Component, OnInit } from '@angular/core';
-import { Quote } from '../quote';
+
 @Component({
   selector: 'quote',
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  clicks = 0
   quotes: Quote[] = [
-    new Quote(1,'elijah','first quote ', 0, 0, 'description one'),
-    new Quote(2,'elijah','second quote', 0, 0, 'description one'),
-    new Quote(3,'elijah','third quote', 0, 0, 'description one'),
+    new Quote(1,'elijah','first quote ', 0,0, ""),
+    new Quote(2,'elijah','second quote', 0,0, ""),
+    new Quote(3,'elijah','third quote', 0,0,""),
   ];
   constructor() {}
   completequote(ifSure: any, index: number) {
@@ -36,6 +38,12 @@ export class QuoteComponent implements OnInit {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     this.quotes.push(quote)
+  }
+  upvotes: number = 1
+  mine(index:number){
+    this.quotes[index].upvotes= this.clicks++
+  //   this.quotes[index].upvotes = !this.quotes[index].upvotes
+  //  return this.quotes[index].upvotes+this.upvotes
   }
   
 }

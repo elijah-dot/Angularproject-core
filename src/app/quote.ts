@@ -3,14 +3,14 @@ export class Quote {
   id: number;
   name: string;
   quote: string;
-  upvotes: number;
+  public upvotes: any;
   downvotes: number;
   description: string;
   constructor(
     id: number,
     name: string,
     quote: string,
-    upvotes: number,
+    upvotes: any,
     downvotes: number,
     description: string
   ) {
